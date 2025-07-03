@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: binance-bot-dashboard
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python multi_symbol_bot.py
+    plan: free
